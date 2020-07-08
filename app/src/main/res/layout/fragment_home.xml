@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:elevation="7dp"
+                android:layout_margin="15dp"
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_search_bar"
+                android:paddingHorizontal="5dp"
+                android:theme="@style/MySearch"
+                app:iconifiedByDefault="false"
+                app:queryHint="@string/search_here"
+                app:searchIcon="@drawable/ic_icon_search">
+            </androidx.appcompat.widget.SearchView>
+
+            <com.google.android.material.tabs.TabLayout
+                app:tabMode="scrollable"
+                android:id="@+id/tabs"
+                app:tabTextColor="@color/colorGrey2"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/all"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/restaurants"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/stores"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/clothes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/gifts"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="@string/electrical_devices"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp">
+            </androidx.viewpager.widget.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator_details"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:ci_drawable="@drawable/ic_indicator_selected"
+                app:ci_height="10dp"
+                app:ci_width="25dp"
+                app:ci_drawable_unselected="@drawable/ic_indicator_unselected"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_icon_digital">
+                    </ImageView>
+                    
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textSize="14sp"
+                        android:text="@string/digital_services">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_icon_gps">
+                    </ImageView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textSize="14sp"
+                        android:text="@string/order_car">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_icon_service">
+                    </ImageView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textSize="14sp"
+                        android:text="@string/order_service">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_icon_free_delivery">
+                    </ImageView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textSize="14sp"
+                        android:text="@string/free_delivery">
+                    </TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/latest_offers"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cairo_bold">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="90dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_further_arrow" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/item_newest_categories"></include>
+
+            <include layout="@layout/item_newest"></include>
+
+            <include layout="@layout/item_newest"></include>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/productive_families"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cairo_bold">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="90dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_further_arrow" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/item_productive_family"/>
+
+                <include layout="@layout/item_productive_family"/>
+
+                <include layout="@layout/item_productive_family"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/places_near_you"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cairo_bold">
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_home_near"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

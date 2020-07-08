@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/cairo_reqular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_details"
+                android:textSize="17sp">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:padding="10dp"
+                    android:background="@drawable/shape_text_vie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="8">
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:padding="10dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="50dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="40dp"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:scaleType="centerInside"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_icon_camera">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أضف كوبون الخصم"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/cairo_reqular"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_icom_add">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:background="@drawable/shape_text_vie"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <Button
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/hape_btn_gradiant"
+                android:text="تأكيد الطلب"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:fontFamily="@font/cairo_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp">
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
