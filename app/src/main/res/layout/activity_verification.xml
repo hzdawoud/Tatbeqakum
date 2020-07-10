@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".auth.VerificationActivity">
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
+            android:paddingBottom="@dimen/_40sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -20,13 +23,13 @@
 
 
             <TextView
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="@dimen/_40sdp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="30sp"
+                android:textSize="@dimen/_30ssp"
                 android:text="@string/thanks">
             </TextView>
 
@@ -39,8 +42,8 @@
 
 
             <LinearLayout
-                android:layout_marginTop="70dp"
-                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -51,13 +54,13 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo_bold"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/_12ssp"
                     android:text="@string/enter_code">
                 </TextView>
 
                 <EditText
                     android:inputType="textEmailAddress"
-                    android:textSize="13sp"
+                    android:textSize="@dimen/_10ssp"
                     android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -69,33 +72,34 @@
             </LinearLayout>
 
             <TextView
-                android:layout_marginHorizontal="20dp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:gravity="center"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorGrey"
-                android:textSize="15sp"
+                android:textSize="@dimen/_12ssp"
                 android:text="@string/activiation_message">
             </TextView>
 
 
 
             <Button
-                android:layout_marginTop="30dp"
+                android:id="@+id/confirm_btn"
+                android:layout_marginTop="@dimen/_30sdp"
                 android:fontFamily="@font/cairo_bold"
                 android:text="@string/code_confirm"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:background="@drawable/ripple_main_btn"
                 android:textColor="@color/colorWhite">
             </Button>
 
             <LinearLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
@@ -106,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo_bold"
                     android:textColor="@color/colorGrey"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/_12ssp"
                     android:text="@string/didnt_recieve">
                 </TextView>
 
@@ -117,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo_bold"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/_12ssp"
                     android:text="@string/send_again">
                 </TextView>
 

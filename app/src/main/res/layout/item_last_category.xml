@@ -6,20 +6,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
-        app:cardCornerRadius="60dp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_35sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp">
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/ic_icon_van"
+            android:scaleType="centerInside">
         </ImageView>
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:text="خدمات توصيل الورود"
+        android:textSize="@dimen/_8ssp"
         android:fontFamily="@font/cairo_bold"
         android:textColor="@color/colorBlack"
         android:layout_marginHorizontal="10dp"

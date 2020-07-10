@@ -5,13 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
-        app:cardCornerRadius="15dp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:padding="10dp"
+            android:padding="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -26,12 +26,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardElevation="0dp"
-                    app:cardCornerRadius="15dp">
+                    app:cardCornerRadius="@dimen/_15sdp">
 
                     <ImageView
                         android:scaleType="centerCrop"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
                         android:src="@drawable/img_order">
                     </ImageView>
 
@@ -40,8 +40,8 @@
 
                 <LinearLayout
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorBlack"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="12sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="هامبرجر"/>
 
@@ -58,7 +58,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorGrey"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="بدون بصل, تحميص خفيف"/>
 
@@ -66,7 +66,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="مطعم البيك"/>
 
@@ -74,7 +74,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="الشوقية ، مكة"/>
                 </LinearLayout>
@@ -87,8 +87,8 @@
 
                 <LinearLayout
                     android:gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginVertical="20dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -97,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="رقم الطلب"/>
 
@@ -105,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="5009#"/>
 
@@ -113,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_height="wrap_content"
                         android:text="20/6/2/2020"/>
 
@@ -126,7 +126,7 @@
                             android:layout_width="wrap_content"
                             android:textColor="@color/colorPrimary"
                             android:fontFamily="@font/cairo_bold"
-                            android:textSize="10sp"
+                            android:textSize="@dimen/_8ssp"
                             android:layout_height="wrap_content"
                             android:text="عدد الوجبات  X2"/>
 
@@ -140,7 +140,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/_1sdp"
                 android:background="@color/colorGrey">
             </View>
 
@@ -152,27 +152,27 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:elevation="7dp"
-                    android:layout_margin="5dp"
+                    android:elevation="@dimen/_7sdp"
+                    android:layout_margin="@dimen/_5sdp"
                     app:cardBackgroundColor="@color/colorWhite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="14dp">
+                    app:cardCornerRadius="@dimen/_14sdp">
 
                     <TextView
-                        android:layout_marginHorizontal="10dp"
-                        android:padding="5dp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/delete_order"
                         android:textColor="@color/colorPrimary"
-                        android:drawablePadding="5dp"
+                        android:drawablePadding="@dimen/_5sdp"
                         android:drawableEnd="@drawable/ic_icon_delete">
                     </TextView>
 
@@ -180,21 +180,21 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:layout_margin="5dp"
-                    android:elevation="7dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="@dimen/_7sdp"
                     app:cardBackgroundColor="@color/colorWhite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="14dp">
+                    app:cardCornerRadius="@dimen/_14sdp">
 
                     <TextView
-                        android:layout_marginHorizontal="10dp"
-                        android:padding="5dp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/retry"
                         android:textColor="@color/colorPrimary"
-                        android:drawablePadding="5dp"
+                        android:drawablePadding="@dimen/_5sdp"
                         android:drawableEnd="@drawable/ic_icon_retry">
                     </TextView>
 
@@ -207,21 +207,21 @@
                 </LinearLayout>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_margin="5dp"
-                    android:elevation="7dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="@dimen/_7sdp"
                     app:cardBackgroundColor="@color/colorGrey"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="14dp">
+                    app:cardCornerRadius="@dimen/_14sdp">
 
                     <TextView
-                        android:layout_marginHorizontal="10dp"
-                        android:padding="5dp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="17.94 SAR"
                         android:textColor="@color/colorPrimary"
-                        android:drawablePadding="5dp"
+                        android:drawablePadding="@dimen/_5sdp"
                         >
                     </TextView>
 

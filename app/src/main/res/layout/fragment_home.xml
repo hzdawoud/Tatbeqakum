@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeFragment">
 
@@ -16,16 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="70dp">
+            android:paddingBottom="@dimen/_70sdp">
 
             <androidx.appcompat.widget.SearchView
-                android:elevation="7dp"
-                android:layout_margin="15dp"
+                android:elevation="@dimen/_7sdp"
+                android:layout_margin="@dimen/_15sdp"
                 android:id="@+id/search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_search_bar"
-                android:paddingHorizontal="5dp"
+                android:paddingHorizontal="@dimen/_5sdp"
                 android:theme="@style/MySearch"
                 app:iconifiedByDefault="false"
                 app:queryHint="@string/search_here"
@@ -75,25 +76,25 @@
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/pager"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="wrap_content"
-                android:layout_height="170dp">
+                android:layout_height="@dimen/_170sdp">
             </androidx.viewpager.widget.ViewPager>
 
             <me.relex.circleindicator.CircleIndicator
                 android:id="@+id/indicator_details"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 app:ci_drawable="@drawable/ic_indicator_selected"
-                app:ci_height="10dp"
-                app:ci_width="25dp"
+                app:ci_height="@dimen/_10sdp"
+                app:ci_width="@dimen/_20sdp"
                 app:ci_drawable_unselected="@drawable/ic_indicator_unselected"/>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -117,12 +118,14 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_10ssp"
                         android:text="@string/digital_services">
                     </TextView>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:foreground="?attr/selectableItemBackground"
+                    android:id="@+id/order_car"
                     android:gravity="center"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -141,12 +144,14 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_10ssp"
                         android:text="@string/order_car">
                     </TextView>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:foreground="?attr/selectableItemBackground"
+                    android:id="@+id/order_service"
                     android:gravity="center"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -165,12 +170,14 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_10ssp"
                         android:text="@string/order_service">
                     </TextView>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:foreground="?attr/selectableItemBackground"
+                    android:id="@+id/free_delivery"
                     android:gravity="center"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -189,7 +196,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_10ssp"
                         android:text="@string/free_delivery">
                     </TextView>
                 </LinearLayout>
@@ -199,19 +206,19 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/latest_offers"
                     android:gravity="center_vertical"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/cairo_bold">
                 </TextView>
 
@@ -222,17 +229,17 @@
                 </LinearLayout>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
                     android:foreground="?attr/selectableItemBackgroundBorderless"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardElevation="0dp"
-                    app:cardCornerRadius="90dp">
+                    app:cardCornerRadius="@dimen/_90sdp">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_further_arrow" />
                 </androidx.cardview.widget.CardView>
@@ -249,19 +256,19 @@
 
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/productive_families"
                     android:gravity="center_vertical"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/cairo_bold">
                 </TextView>
 
@@ -272,17 +279,17 @@
                 </LinearLayout>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
                     android:foreground="?attr/selectableItemBackgroundBorderless"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardElevation="0dp"
-                    app:cardCornerRadius="90dp">
+                    app:cardCornerRadius="@dimen/_90sdp">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_further_arrow" />
                 </androidx.cardview.widget.CardView>
@@ -303,19 +310,19 @@
 
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/places_near_you"
                     android:gravity="center_vertical"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/cairo_bold">
                 </TextView>
 
