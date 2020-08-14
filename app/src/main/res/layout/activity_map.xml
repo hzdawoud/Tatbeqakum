@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layoutDirection="rtl"
     android:layout_height="match_parent">
 
     <com.google.android.gms.maps.MapView
@@ -27,7 +28,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Delivery location"
+                android:text="موقع التوصيل"
                 android:fontFamily="@font/cairo_reqular"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/_10ssp">
@@ -36,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jeddah - Makkah Al-Mukarramah"
+                android:text="جدة - مكة المكرمة"
                 android:fontFamily="@font/cairo_reqular"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/_8ssp">
@@ -71,7 +72,7 @@
         android:id="@+id/sign_in"
         android:layout_marginTop="@dimen/_30sdp"
         android:fontFamily="@font/cairo_bold"
-        android:text="Pick your position"
+        android:text="اختر موقعك"
         android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

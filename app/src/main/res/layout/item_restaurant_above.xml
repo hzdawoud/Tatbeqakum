@@ -20,7 +20,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_weight="1"
                 app:cardElevation="0dp"
                 android:elevation="0dp"
@@ -41,8 +41,9 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorGrey">
             </LinearLayout>
+
             <androidx.cardview.widget.CardView
-                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_weight="1"
                 app:cardElevation="0dp"
                 android:elevation="0dp"

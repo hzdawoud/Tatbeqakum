@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -166,11 +167,12 @@
                     app:cardCornerRadius="@dimen/_14sdp">
 
                     <TextView
-                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
                         android:padding="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/delete_order"
+                        android:textSize="@dimen/_8sdp"
+                        android:text="حذف الطلب"
                         android:textColor="@color/colorPrimary"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableEnd="@drawable/ic_icon_delete">
@@ -188,11 +190,12 @@
                     app:cardCornerRadius="@dimen/_14sdp">
 
                     <TextView
-                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
                         android:padding="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/retry"
+                        android:text="إعادة طلب"
+                        android:textSize="@dimen/_8sdp"
                         android:textColor="@color/colorPrimary"
                         android:drawablePadding="@dimen/_5sdp"
                         android:drawableEnd="@drawable/ic_icon_retry">
@@ -215,11 +218,12 @@
                     app:cardCornerRadius="@dimen/_14sdp">
 
                     <TextView
+                        android:textSize="@dimen/_8sdp"
                         android:layout_marginHorizontal="@dimen/_10sdp"
                         android:padding="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="17.94 SAR"
+                        android:text="17.94 ريال"
                         android:textColor="@color/colorPrimary"
                         android:drawablePadding="@dimen/_5sdp"
                         >

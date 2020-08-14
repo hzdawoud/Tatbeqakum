@@ -131,6 +131,9 @@
                 </TextView>
 
                 <EditText
+                    android:text="hzdawoud@gmail.com"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
                     android:inputType="textEmailAddress"
                     android:textSize="@dimen/_10ssp"
                     android:textColor="@color/colorPrimary"
@@ -160,6 +163,9 @@
                 </TextView>
 
                 <EditText
+                    android:text="dfgdfgfdgdffdgd"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
                     android:drawableEnd="@drawable/ic_icon_eye"
                     android:textSize="@dimen/_10ssp"
                     android:textColor="@color/colorPrimary"

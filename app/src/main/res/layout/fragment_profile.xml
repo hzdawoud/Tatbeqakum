@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="rtl"
     tools:context=".auth.SignUpActivity">
 
 
@@ -36,7 +37,7 @@
                         android:fontFamily="@font/cairo_bold"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/_14ssp"
-                        android:text="Welcome">
+                        android:text="مرحبا">
                     </TextView>
 
                     <TextView
@@ -46,7 +47,7 @@
                         android:fontFamily="@font/cairo_reqular"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/_10ssp"
-                        android:text="Belala Ahmed">
+                        android:text="بلال أحمد">
                     </TextView>
 
                     <TextView
@@ -109,8 +110,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_14ssp"
-                android:text="Account">
+                android:textSize="@dimen/_13ssp"
+                android:text="الحساب">
             </TextView>
 
             <androidx.cardview.widget.CardView
@@ -139,12 +140,12 @@
                             android:drawableStart="@drawable/ic_icon_orders"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="@dimen/_10sdp"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_11ssp"
                             android:padding="@dimen/_5sdp"
                             android:fontFamily="@font/cairo_bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Orders"
+                            android:text="الطلبات"
                             android:textColor="@color/colorPrimary"
                             android:drawablePadding="@dimen/_10sdp">
                         </TextView>
@@ -179,12 +180,12 @@
                             android:drawableStart="@drawable/ic_icon_portfolio"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="@dimen/_10sdp"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_11ssp"
                             android:padding="@dimen/_5sdp"
                             android:fontFamily="@font/cairo_bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Portfolio"
+                            android:text="المحفظة"
                             android:textColor="@color/colorPrimary"
                             android:drawablePadding="@dimen/_10sdp">
                         </TextView>
@@ -195,7 +196,7 @@
                             android:layout_gravity="center"
                             android:layout_marginStart="@dimen/_15sdp"
                             android:padding="@dimen/_5sdp"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_10ssp"
                             android:fontFamily="@font/cairo_bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -221,12 +222,12 @@
                             android:drawableStart="@drawable/ic_icon_visa"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="@dimen/_10sdp"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_11ssp"
                             android:padding="@dimen/_5sdp"
                             android:fontFamily="@font/cairo_bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cards"
+                            android:text="البطاقات"
                             android:textColor="@color/colorPrimary"
                             android:drawablePadding="@dimen/_10sdp">
                         </TextView>
@@ -237,7 +238,7 @@
                             android:layout_gravity="center"
                             android:layout_marginStart="@dimen/_15sdp"
                             android:padding="@dimen/_5sdp"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_10ssp"
                             android:fontFamily="@font/cairo_bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -263,12 +264,12 @@
                             android:drawableStart="@drawable/ic_icon_copon"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="@dimen/_10sdp"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_11ssp"
                             android:padding="@dimen/_5sdp"
                             android:fontFamily="@font/cairo_bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Coupons"
+                            android:text="الكبونات"
                             android:textColor="@color/colorPrimary"
                             android:drawablePadding="@dimen/_10sdp">
                         </TextView>
@@ -298,7 +299,7 @@
                         android:fontFamily="@font/cairo_bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Add Coupon"
+                        android:text="أضف كوبون"
                         android:drawablePadding="@dimen/_5sdp"
                         android:textColor="@color/colorPrimary"
                         >
@@ -324,8 +325,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo_bold"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="@dimen/_14ssp"
-                    android:text="Notifications">
+                    android:textSize="@dimen/_13ssp"
+                    android:text="الإشعارات">
                 </TextView>
 
                 <LinearLayout
@@ -356,12 +357,12 @@
                     android:gravity="center_vertical"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_10ssp"
                     android:padding="@dimen/_5sdp"
                     android:fontFamily="@font/cairo_bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New order notification"
+                    android:text="إشعار طلب جديد"
                     android:textColor="@color/colorPrimary">
                 </TextView>
 
@@ -397,12 +398,12 @@
                     android:gravity="center_vertical"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_10ssp"
                     android:padding="@dimen/_5sdp"
                     android:fontFamily="@font/cairo_bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Notifications of current offers"
+                    android:text="إشعارات العروض الحالية"
                     android:textColor="@color/colorPrimary">
                 </TextView>
 
@@ -437,12 +438,12 @@
                     android:gravity="center_vertical"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_10ssp"
                     android:padding="@dimen/_5sdp"
                     android:fontFamily="@font/cairo_bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Completed application notifications"
+                    android:text="إشعارات الطلبات المكتملة"
                     android:textColor="@color/colorPrimary">
                 </TextView>
 
@@ -477,12 +478,12 @@
                     android:gravity="center_vertical"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_10ssp"
                     android:padding="@dimen/_5sdp"
                     android:fontFamily="@font/cairo_bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Payment request notifications"
+                    android:text="إشعارات طلب دفع"
                     android:textColor="@color/colorPrimary">
                 </TextView>
 
@@ -517,12 +518,12 @@
                     android:gravity="center_vertical"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_10ssp"
                     android:padding="@dimen/_5sdp"
                     android:fontFamily="@font/cairo_bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reminder completes payment"
+                    android:text="تذكير دفع الطلبات"
                     android:textColor="@color/colorPrimary">
                 </TextView>
 
@@ -554,8 +555,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_14ssp"
-                android:text="Favorite places">
+                android:textSize="@dimen/_13ssp"
+                android:text="الأماكن المفضلة">
             </TextView>
 
             <androidx.cardview.widget.CardView
@@ -579,9 +580,9 @@
                         android:drawableStart="@drawable/ic_place"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Al Roots Restaurant"
+                        android:text="مطعم الروتس"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/_12ssp"
+                        android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/cairo_bold">
                     </TextView>
 
@@ -590,9 +591,9 @@
                         android:drawableStart="@drawable/ic_place"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Al Zain Clothes Store"
+                        android:text="متجر الزين للملابس"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/_12ssp"
+                        android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/cairo_bold">
                     </TextView>
                 </LinearLayout>
@@ -609,8 +610,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_14ssp"
-                android:text="Request for Quotation">
+                android:textSize="@dimen/_13ssp"
+                android:text="طلب عرض سعر">
             </TextView>
 
             <androidx.cardview.widget.CardView
@@ -622,13 +623,14 @@
                 android:layout_marginHorizontal="@dimen/_10sdp">
 
                 <TextView
+                    android:paddingVertical="@dimen/_3sdp"
                     android:drawableStart="@drawable/ic_icon_add_copon"
                     android:drawablePadding="@dimen/_10sdp"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add request"
-                    android:textSize="@dimen/_12ssp"
+                    android:text="إضافة طلب"
+                    android:textSize="@dimen/_10ssp"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/cairo_bold">
                 </TextView>
@@ -644,8 +646,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_14ssp"
-                android:text="Connect with the bot">
+                android:textSize="@dimen/_13ssp"
+                android:text="تواصل مع البوت">
             </TextView>
 
             <androidx.cardview.widget.CardView
@@ -657,13 +659,14 @@
                 android:layout_marginHorizontal="@dimen/_10sdp">
 
                 <TextView
+                    android:paddingVertical="@dimen/_3sdp"
                     android:drawableStart="@drawable/ic_icon_chat"
                     android:drawablePadding="@dimen/_10sdp"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Start chatting"
-                    android:textSize="@dimen/_12ssp"
+                    android:text="بدء الدردشة"
+                    android:textSize="@dimen/_10ssp"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/cairo_bold">
                 </TextView>
@@ -683,14 +686,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo_bold"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_14ssp"
-                android:text="Settings">
+                android:textSize="@dimen/_13ssp"
+                android:text="الإعدادات">
             </TextView>
 
             <Button
                 android:layout_marginTop="@dimen/_30sdp"
                 android:fontFamily="@font/cairo_bold"
-                android:text="Sign out"
+                android:text="تسجيل الخروج"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -716,8 +719,8 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Join Tatbeqakum"
-                    android:textSize="@dimen/_12ssp"
+                    android:text="انضم إلى تطبيقكم"
+                    android:textSize="@dimen/_10ssp"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/cairo_bold">
                 </TextView>

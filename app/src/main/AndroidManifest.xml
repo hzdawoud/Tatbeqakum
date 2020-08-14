@@ -15,7 +15,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BagActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".DeliveryServicesActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".TrackingMapActivity" />
+        <activity android:name=".WaitingActivity" />
+        <activity android:name=".CreditCardActivity" />
+        <activity android:name=".PaymentMethodActivity" />
+        <activity android:name=".ElectronicServiceActivity" />
+        <activity android:name=".CoffeeActivity" />
+        <activity android:name=".PhotographyActivity" />
+        <activity android:name=".SheetMapActivity" />
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".SearchLocationActivity" />
+        <activity android:name=".FreeDeliveryActivity" />
+        <activity android:name=".BagActivity" />
         <activity android:name=".SandwitchActivity" />
         <activity android:name=".RestaurantActivity" />
         <activity android:name=".MapActivity" />
@@ -36,18 +50,20 @@
         <activity android:name=".DeliveryActivity" />
         <activity android:name=".OrderDetails" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity" >
+
+        </activity>
+        <activity android:name=".auth.ResetPasswordActivity" />
+        <activity android:name=".auth.VerificationActivity" />
+        <activity android:name=".auth.SignUpActivity" />
+        <activity android:name=".auth.SignInActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".auth.ResetPasswordActivity" />
-        <activity android:name=".auth.VerificationActivity" />
-        <activity android:name=".auth.SignUpActivity" />
-        <activity android:name=".auth.SignInActivity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

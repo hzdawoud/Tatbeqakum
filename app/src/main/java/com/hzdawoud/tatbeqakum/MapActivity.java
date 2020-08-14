@@ -30,6 +30,7 @@ public class MapActivity extends AppCompatActivity {
 
         mMapView.onCreate(savedInstanceState);
 
+        mMapView.onResume();
         mMapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap mMap) {

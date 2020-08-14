@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -17,6 +18,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="@dimen/_15sdp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_kfc">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:gravity="center"
@@ -56,27 +74,6 @@
                     android:text="10 min ,يبعد عنك مسافة">
                 </TextView>
             </LinearLayout>
-
-            <androidx.cardview.widget.CardView
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_weight="1"
-                app:cardElevation="0dp"
-                android:elevation="0dp"
-                app:cardCornerRadius="@dimen/_15sdp"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_90sdp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/img_kfc">
-                </ImageView>
-            </androidx.cardview.widget.CardView>
-
-
-
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

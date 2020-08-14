@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -31,10 +32,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/_14ssp"
+                        android:textSize="@dimen/_12ssp"
                         android:textColor="@color/colorPrimary"
                         android:fontFamily="@font/cairo_bold"
-                        android:text="Hamburger">
+                        android:text="هامبرجر">
                     </TextView>
 
                     <LinearLayout
@@ -43,12 +44,13 @@
                         android:layout_weight="1"/>
 
                     <TextView
+                        android:gravity="start"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/_9ssp"
                         android:textColor="@color/colorBlack"
                         android:fontFamily="@font/cairo_reqular"
-                        android:text="Chicken breast pieces with lettuce">
+                        android:text="قطع صدر دجاج مع خس مطهوة">
                     </TextView>
 
                     <LinearLayout
@@ -67,7 +69,7 @@
                             android:textSize="@dimen/_9ssp"
                             android:textColor="@color/colorPrimary"
                             android:fontFamily="@font/cairo_reqular"
-                            android:text="Add to cart">
+                            android:text="أضف للسلة">
                         </TextView>
 
                         <View
@@ -83,7 +85,7 @@
                             android:textSize="@dimen/_9ssp"
                             android:textColor="@color/colorPrimary"
                             android:fontFamily="@font/cairo_reqular"
-                            android:text="33 SAR">
+                            android:text="33 ريال">
                         </TextView>
 
                     </LinearLayout>

@@ -38,4 +38,9 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
+    compile 'com.github.fuzz-productions:CutoutViewIndicator:v0.9.0'
+
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.0'
+
+
 }

@@ -37,8 +37,8 @@
     <string name="latest_offers">Latest offers and discounts</string>
     <string name="productive_families">Productive Families</string>
     <string name="places_near_you">Places Near You</string>
-    <string name="delete_order">Delete</string>
-    <string name="retry">Retry</string>
+    <string name="delete_order">حذف الطلب</string>
+    <string name="retry">إعادة طلب</string>
     <string name="my_orders">My Orders</string>
     <string name="settings">الإعدادات</string>
     <string name="about_app">عن تطبيقكم</string>

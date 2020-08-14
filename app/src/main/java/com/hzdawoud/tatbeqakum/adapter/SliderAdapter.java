@@ -22,15 +22,17 @@ public class SliderAdapter extends PagerAdapter {
 
  
     Activity activity;
+    int count;
 
-    public SliderAdapter(Activity activity) {
+    public SliderAdapter(Activity activity, int count) {
         this.activity = activity;
+        this.count = count;
     }
 
 
     @Override
     public int getCount() {
-        return 3;
+        return count;
     }
 
     @Override
@@ -48,7 +50,11 @@ public class SliderAdapter extends PagerAdapter {
         ImageView img;
         img = view.findViewById(R.id.img);
 
-        img.setImageResource(R.drawable.img_aklak);
+        if(count == 3){
+            img.setImageResource(R.drawable.img_aklak);
+        } else {
+            img.setImageResource(R.drawable.img_wp);
+        }
 
         return view;
     }
